@@ -1,0 +1,111 @@
+* { 
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: url("https://www.onholdinc.com/mohblog/wp-content/uploads/2019/09/music-news.jpg");
+    background-size: cover;
+    font: 14px; 
+    font-family: 'Lato', sans-serif
+
+}
+.container{
+    margin: 100px auto 0;
+    position: absolute;
+    top: 75px;
+    left: 50px;
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all 1s ease;
+    transform: perspective(3500px) rotate3d(0, 1, 0, 30deg);
+}
+
+.result {
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: over;
+    background-position: center;
+}
+
+#search1 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: all 1s ease;
+    position: absolute;
+    width: 485px;
+    bottom: 100px;
+    right: 75px
+}
+
+#myBtn {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: all 1s ease;
+    position: absolute;
+    bottom: 50px;
+    right: 325px;
+    width: 235px;
+}
+
+#myBtn2 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    transition: all 1s ease;
+    position: absolute;
+    bottom: 50px;
+    right: 75px;
+    width: 235px;
+}
+
+.media {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    width: 300px;
+    z-index: 10;
+    opacity: 1;
+    box-shadow: 0px 0px 80px rgba(255,255,255,.1);
+    transition: all 2s ease;
+    background-color: black; 
+}
+
+.media.hidden {
+    opacity: 0;
+}
+
+.media audio {
+    width: 100%;
+}
+
+.media p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+
+h1 {
+    position: absolute;
+    left: 100px;
+    top: 50px;
+
+}
